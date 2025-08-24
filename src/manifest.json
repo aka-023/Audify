@@ -1,0 +1,91 @@
+{
+  "manifest_version": 3,
+  "name": "Audify",
+  "version": "2.0.17",
+  "description": "Analyzes screen content using local AI (Gemini Nano, Ollama, LM Studio, vLLM) and cloud AI (Gemini, Mistral).",
+  "icons": {
+    "16":"icons/logo-2.png",
+    "32":"icons/logo-2.png",
+    "48":"icons/logo-2.png",
+    "128": "icons/logo-2.png"
+  },
+  "permissions": [
+    "sidePanel",
+    "scripting",
+    "microphone",
+    "audioCapture",
+    "commands",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "main/sidepanel.html"
+  },
+  "options_page": "option/options.html",
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open A-Eye Web Chat Assistant"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "commands": {
+    "toggle-api-mode": {
+      "suggested_key": {
+        "default": "Alt+Shift+1",
+        "mac": "Alt+Shift+1"
+      },
+      "description": "Toggle between local and cloud AI"
+    },
+    "toggle-voice-input": {
+      "suggested_key": {
+        "default": "Alt+Shift+2",
+        "mac": "Alt+Shift+2"
+      },
+      "description": "Toggle voice input for chat"
+    },
+    "toggle-repeat": {
+      "suggested_key": {
+        "default": "Alt+Shift+3",
+        "mac": "Alt+Shift+3"
+      },
+      "description": "Repeat last AI response"
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q",
+        "mac": "Alt+Shift+Q"
+      },
+      "description": "Open Extension"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "permission/permissionContent.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "permission/permission.html",
+        "permission/requestPermission.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
