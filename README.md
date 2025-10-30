@@ -1,4 +1,4 @@
-# Gemini Access Assistant
+# Audify
 
 **An AI-powered web accessibility tool for effortless navigation and interaction, specifically designed for users with special abilities in vision.**
 
