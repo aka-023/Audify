@@ -1,19 +1,39 @@
-<p align="center">
-    <img src="images/logo-1.png" alt="Eye Logo" width="128">
-    <h1 align="center">Audify</h1>
-</p>
+# Gemini Access Assistant
 
-<p align="center">
-    <strong>Your AI-powered companion for a more accessible web.</strong>
-</p>
+**An AI-powered web accessibility tool for effortless navigation and interaction, specifically designed for users with special abilities in vision.**
+
 ---
 
-Audify is a free, open-source Chrome extension designed to make web browsing easier and more accessible, especially for users with visual impairments. Through intuitive AI chat, powerful screen analysis, and comprehensive voice control, it transforms how you interact with the web. You can freely choose between privacy-focused local AI services (Gemini Nano, Ollama, LM Studio and vLLM) or powerful cloud AI services (Google Gemini and Mistral AI).
+## ✨ Key Features
 
-## Key Features
+-   **Universal Web Access**: Operates on **any website**, providing real-time analysis and interaction commands based on the live content of the current page.
+-   **AI Screen Analysis**: Get instant, intelligent summaries and analysis of the current web page content to help understand complex layouts or unlabelled elements.
+-   **Full Voice Control**: Interact completely **hands-free** using **voice input and output** features to ask questions or issue commands.
+-   **Web Page Interaction**: Tell the AI to perform actions for you, such as "click the login button," or "type 'hello world' in the search bar."
+-   **Flexible AI Models**: Easily select your preferred Gemini model, including **Pro**, **Flash**, and **Flash-Lite**, right from the settings.
+-   **Minimal & Intuitive UI**: Designed with a clean, minimal interface for a distraction-free experience.
 
--   **AI Screen Analysis**: Instantly understand webpage content by analyzing screenshots or full-page text with Gemini or local LLMs.
--   **Full Voice Control**: Use your voice to navigate, ask questions, and control the browser.
--   **Dual AI Modes**: Switch with a single click between powerful cloud AI and privacy-focused local AI.
--   **Web Page Interaction**: Tell the AI to click buttons or type text for you (e.g., "click the login button", "type 'hello world' in the search bar").
--   **Cross-Platform**: Works on any Windows, macOS, or Linux computer with Google Chrome.
+---
+
+## ⌨️ Keyboard Shortcuts
+
+Access core functions quickly using these streamlined shortcuts:
+
+| Command | Default (Windows/Linux) | macOS | Description |
+| :--- | :--- | :--- | :--- |
+| **Toggle Voice Input** | `Alt` + `2` | `Alt` + `2` | Turns the microphone on/off for hands-free chat. |
+| **Repeat Last Response** | `Alt` + `3` | `Alt` + `3` | Re-reads the last AI output. |
+
+---
+
+## 🛠️ Installation and Usage
+
+To use the Gemini Access Assistant, follow these steps to load the extension in a Chrome-based browser:
+
+1.  **Download the Code:** Download or clone the entire project repository to your local machine.
+2.  **Open Extensions Page:** In your browser, navigate to: `chrome://extensions`
+3.  **Enable Developer Mode:** Toggle the **"Developer mode"** switch in the top-right corner to **ON**.
+4.  **Load Unpacked:** Click the **"Load unpacked"** button.
+5.  **Select Source Folder:** Navigate to the downloaded project files and select the **`src`** folder.
+
+The extension is now installed and can be accessed via the toolbar icon or the `Alt` + `Q` shortcut.
